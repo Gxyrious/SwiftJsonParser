@@ -1,5 +1,5 @@
 //
-//  SimpleExample.swift
+//  TestExample.swift
 //  SwiftJsonParser
 //
 //  Created by 刘畅 on 2022/10/22.
@@ -51,9 +51,9 @@ class TestExample {
                     "email":"2051971@tongji.edu.cn"
                 },
                 {
-                    "id":1002,
-                    "name":"Demo Employee",
-                    "email":"abc@def.com"
+                    "id":2053769,
+                    "name":"Cai Minghong",
+                    "email":"null"
                 }
             ]
         }
@@ -80,9 +80,9 @@ class TestExample {
                     "email":"2051971@tongji.edu.cn"
                 ],
                 [
-                    "id":1002,
-                    "name":"Demo Employee",
-                    "email":"abc@def.com"
+                    "id":2053769,
+                    "name":"Cai Minghong",
+                    "email":"null"
                 ]
             ]
         ]
@@ -92,7 +92,7 @@ class TestExample {
         let fromDictionary: BaseResponse = BaseResponse(dictionary: jsonDict)
         
         let fromJsonString: BaseResponse = try SwiftJsonParser.parse(string: jsonString)
-        print(fromDictionary)
+        
         print("=====fromDictionary=====")
         print(fromDictionary.status!.code!)
         print(fromDictionary.status!.message!)
