@@ -7,4 +7,8 @@
 
 import Foundation
 
-try TestExample1.start()
+do {
+    try TestExample.start()
+} catch {
+    print(error)
+}

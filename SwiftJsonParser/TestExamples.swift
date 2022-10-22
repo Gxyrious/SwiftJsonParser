@@ -7,7 +7,6 @@
 
 import Foundation
 
-// ============== 第一组测试 ==============/
 class BaseResponse: JsonParsable{
   var status: ResponseStatus?
   var data: TeamInfo?
@@ -29,9 +28,9 @@ class Student: JsonParsable {
   var email: String?
 }
 
-class TestExample1 {
+class TestExample {
     
-    public static let jsonString =
+    public static var jsonString =
     """
     {
         "status":{
@@ -61,7 +60,7 @@ class TestExample1 {
     }
     """
     
-    public static let jsonDict: [String: Any] =
+    public static var jsonDict: [String: Any] =
     [
         "status":[
             "code":200,
@@ -101,7 +100,7 @@ class TestExample1 {
         for student in fromDictionary.data!.students! {
             print("\(student.id!), \(student.name!), \(student.email!)")
         }
-        print("=====fromDictionary=====")
+        print("=====fromDictionary=====\n")
 
 
         print("=====fromJsonString=====")
@@ -111,7 +110,16 @@ class TestExample1 {
         for student in fromJsonString.data!.students! {
             print("\(student.id!), \(student.name!), \(student.email!)")
         }
-        print("=====fromJsonString=====")
+        print("=====fromJsonString=====\n")
         
+        print("=====toJsonString=====")
+        let generatedJsonString = try SwiftJsonParser.getJson(object: fromDictionary)
+        print(generatedJsonString)
+        print("=====toJsonString=====\n")
+        
+        print("=====toDictionary=====")
+        let generatedDictionary = try SwiftJsonParser.getDictionary(object: fromDictionary)
+        print(generatedDictionary)
+        print("=====toDictionary=====\n")
     }
 }
