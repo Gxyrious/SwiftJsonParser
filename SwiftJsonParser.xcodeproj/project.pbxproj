@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AF0CB1F02902B6A700470279 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0CB1EF2902B6A700470279 /* main.swift */; };
+		AF0CB1F72902B7BB00470279 /* JsonParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0CB1F62902B7BB00470279 /* JsonParsable.swift */; };
+		AF0CB1F92902C78700470279 /* SwiftJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0CB1F82902C78700470279 /* SwiftJsonParser.swift */; };
+		AFF6008B2903CE6100A87752 /* SimpleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6008A2903CE6100A87752 /* SimpleExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		AF0CB1EC2902B6A700470279 /* SwiftJsonParser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftJsonParser; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0CB1EF2902B6A700470279 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AF0CB1F62902B7BB00470279 /* JsonParsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParsable.swift; sourceTree = "<group>"; };
+		AF0CB1F82902C78700470279 /* SwiftJsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJsonParser.swift; sourceTree = "<group>"; };
+		AFF6008A2903CE6100A87752 /* SimpleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				AF0CB1EF2902B6A700470279 /* main.swift */,
+				AFF6008A2903CE6100A87752 /* SimpleExample.swift */,
+				AF0CB1F62902B7BB00470279 /* JsonParsable.swift */,
+				AF0CB1F82902C78700470279 /* SwiftJsonParser.swift */,
 			);
 			path = SwiftJsonParser;
 			sourceTree = "<group>";
@@ -120,7 +129,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF6008B2903CE6100A87752 /* SimpleExample.swift in Sources */,
 				AF0CB1F02902B6A700470279 /* main.swift in Sources */,
+				AF0CB1F72902B7BB00470279 /* JsonParsable.swift in Sources */,
+				AF0CB1F92902C78700470279 /* SwiftJsonParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
